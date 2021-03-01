@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Manish Rana</title>
+<link rel="shortcut icon" type="image/jpg" href="C:/Users/new/Desktop/Personal Portofolio/favicon.png"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  line-height: 20pt;
+  color: #e6b122;
+  position: fixed;
+}
+
+.photo {
+	margin: auto;
+	height: 90px;
+	width: auto;
+	overflow: hidden;
+}
+
+
+.column2 {
+  float: right;
+  width: 78%;
+  padding: 10px;
+  height: auto;
+}
+
+.photo img {
+	margin: auto;
+	max-height: 100%;
+	width: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.image {
+	height: 400px;
+	max-width: 100%;
+	background-color: white;
+	overflow: hidden;
+}
+
+.image img {
+	margin: auto;
+	width: 700px;
+	max-height: 100%;
+	background-color: white;
+	overflow: hidden;
+}
+.item-1, 
+.item-2, 
+.item-3 {
+  color: #e6b122;
+  position: absolute;
+  display: block;
+  top: 2em;
+  
+  width: 60%;
+  
+  font-size: 2em;
+
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.item-1{
+  animation-name: anim-1;
+}
+
+.item-2{
+  animation-name: anim-2;
+}
+
+.item-3{
+  animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+  0%, 8.3% { left: 50%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+  0%, 33.33% { left: 50%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+  0%, 66.66% { left: 50%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+.Skill {
+  margin: auto;
+  text-align: center;
+  line-height: 20pt;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 330px;
+  border: 4px solid #F281F0;
+  border-radius: 35px;
+}
+
+h4 {
+	color: #C39D19;
+}
+
+p {
+	font-size: 12px;
+	font-family: cursive;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	font-family: Garamond;
+	font-size: 14px;
+}
+
+a:hover {
+	color: #cc00cc
+}
+
+/* Container around content */
+.container {
+  padding: 5px 5px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  border: 4px solid #CEF334;
+  border-radius: 25px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -18px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+/* Arrows*/
+.container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+/*For circles*/
+.left::after, .right::after {
+  	left: 16px;
+  }
+ /* Left containers position */ 
+.right {
+	left: 0%;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="row">
+  <div class="column1">
+  	<div class="photo">
+  		<img src="C:/Users/new/Desktop/Personal Portofolio/Avatar.jpg" alt="Avatar.jpg">
+  	</div>
+    <h2 style="font-family: Georgia">Manish Rana</h2>
+    <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession" style="text-decoration: underline;" target="blank">mannishh96@gmail.com</a>
+    <br>
+    <a href="#introduction">INTRODUCTION</a>
+    <br>
+    <a href="#about">ABOUT</a>
+    <br>
+    <a href="#timeline">TIMELINE</a>
+    <br>
+    <a href="https://www.facebook.com/profile.php?id=100011428866331" target="blank" class="fa fa-facebook"></a>
+    <br>
+    <a href="https://www.instagram.com/the_manishrana/" target="blank" class="fa fa-instagram"></a>
+    <br>
+    <a href="https://www.linkedin.com/in/manish-rana-4915171a6/" target="blank" class="fa fa-linkedin"></a>
+    <br>
+    <a href="https://github.com/ManishSudo" target="blank" class="fa fa-github"></a>
+    <br>
+    <p>Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></p>
+  </div>
+
+  <div class="column2">
+  	<div class="image">
+  		<img src="C:/Users/new/Desktop/Personal Portofolio/image.jpg" alt="image.jpg">
+      <p class="item-1">
+        Hi! I am Manish
+        <br>
+        <button onclick="window.open('#','_blank'); return false;">View CV</button>
+      </p>
+      <p class="item-2">
+        I love building things
+        <br>
+        <button onclick="window.open('https://github.com/ManishSudo','_blank'); return false;">My Projects</button>
+      </p>
+      <p class="item-3">
+      Checkout My Website
+      <br>
+      <button onclick="window.open('#','_blank'); return false;">My Website</button>
+    </p>
+  	</div>
+  		  	<a id="introduction"><h4>WHO AM I?</h4></a>
+        <p>I am Electrical & Electronics Engineer graduated from Inderprastha Enginnering College-Ghaziabad. Apart from my professional degree I have a fine knowledge of Embedded Systems, Robotics, Python and Web Development. I love exploring new technologies and often amazed by the progress we as a human species have mad so far in the recent years (apart from the headphone-jack part!!)</p>
+        <a id="about"><h4>WHAT I DO?</h4></a>
+        <div class="expertise">
+        	<div class="Skill">
+        		<div class="content">
+        			<h4><u>Embedded Systems</u></h4>
+        			<p>I have experience of developing various embedded system projects using different microcontrollers.</p>
+        		</div>
+        	</div>
+    	    <div class="Skill">
+    	    	<div class="content">
+    	    		<h4><u>Robotics</u></h4>
+    	    		<p>I have developed various autonomous robots to deal with modern world problems like fire-extinguisher robot, field irrigation robot, etc..</p>
+    	    	</div>
+    	    </div>
+    	    <div class="Skill">
+    	    	<div class="content">
+    	    		<h4><u>Web Development</u></h4>
+    	    		<p>Since 2020 I am working as a freelancer to develop websites and applications for startups nad businesses.</p>
+    	    	</div>
+    	    </div>
+        </div>
+        &nbsp;
+        <a id="timeline"><h4>MY TIMELINE</h4></a>
+        <div class="timeline">
+        	<div class="container left">
+        		<div class="content">
+        			<h4>Freelancer (2020-Present)</h4>
+                    <p>After quiting my last job and with a good inhand experience of many projects, I started working as a freelancer to solve the technical problems of various startups and develop websites applications for them.</p>
+                </div>
+            </div>
+            <div class="container right">
+            	<div class="content">
+            		<h4>Work Experience (2019-2020)</h4>
+            		<p>After my graduation I got a chance to work with a tech based start-up named Tripod India. This was a firm of technical experts in the field of enginnering and my role there was to handle the Embedded projects.</p>
+            	</div>
+            </div>
+            <div class="container left">
+            	<div class="content">
+            		<h4>Internships (2015-2018)</h4>
+            		<p>During my college I completed two internships in D.T.L.(Delhi Transco Limited) and N.T.P.C.(National Thermal Power Corporation). My major part of the work was into the field of substation management for continuous supply of electricity and power generation in thermal power plant. I also completed some professional courses apart from my curriculum like Embedded Systems & Robotics, Basics of Python and Web Development, and also did many projects based on this knowledge.</p>
+            	</div>
+            </div>
+            <div class="container right">
+            	<div class="content">
+            		<h4>Undergraduation at IPEC (2014-2018)</h4>
+            		<p>I completed my under-graduation studies with major in E.E.E.(Electrical & Electronics Engineering). I have completed courses like Embedded Systems, Robotics, Basics of Python, IOT, Web-Development over the years and have better understanding of these subjects. I have also been part of Kalam innovators gallery during my under-graduation.</p>
+            	</div>
+            </div>
+            <div class="container left">
+            	<div class="content">
+            		<h4>Primary and Higher Education (2002-2014)</h4>
+            		<p>I have completed my higher secondary education with major subjects as Physics,Chemistry & Maths with Ist rank. During my time at school, I have developed interest in solving complex problems of the fundamental physics which helped me to improve my understanding of any problem.</p>
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
